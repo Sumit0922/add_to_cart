@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <style>
+      body{
+        background-image: linear-gradient(rgba(22, 22, 36, 0.797),rgba(23, 23, 50, 0.792)),url("C:/Users/Sumit Rahangdale/OneDrive/Pictures/Screenshots/Screenshot_20230214_105719.png");
+        background-position: center;
+        background-size: cover;
+      }
+      #form{
+        
+        width: 500px;
+        margin:auto;
+        margin-top: 200px;
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #c47cff;
+      }
+      .input-field {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+      }
+      .icon {
+        padding: 0 1em;
+      }
+      label {
+        display: block;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        margin-right: 1em;
+      }
+      input[type="text"],
+      input[type="password"] {
+        font-size: large;
+        flex-grow: 1;
+        padding: 0.75em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 0.75em;
+        margin-top: 1em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size:medium;
+      }
+      input[type="cancel"] {
+        width: 100%;
+        padding: 0.75em;
+        margin-top: 1em;
+        background-color: #ed1111;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        font-size:medium;
+      }
+    </style>
+  </head>   
+  <body>
+    <div id= "form" >
+      <div class="input-field">
+        <div class="icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" autocomplete="off">
+      </div> 
+      <div class="input-field">
+        <div class="icon">
+          <i class="fas fa-lock"></i>
+        </div>
+        <label for="password">Password:</label>
+      <div>  <input type="password" id="password" name="password" >
+        <span class="fa fa-eye" onclick="showPassword()"></span>
+     </div>
+      </div>
+      <div class="input-field">
+        <div class="icon">
+          <i class="fas fa-lock"></i>
+        </div>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password">
+      </div>
+      <input type="submit" onclick="register()" value="Register">
+      <input type="cancel" onclick="cancel()" value="Cancel">
+      </div>
+      <script src= "reg.js"></script>
+      </body>
+      
+</html>
+
